@@ -1,0 +1,74 @@
+:root {
+	--rem-base: 10px;
+	--scroll-padding: 3rem;
+	--base-font-size: 2rem;
+	--base-line-height: 26px;
+	--vertical-rhythm: calc(var(--base-line-height) * 1em);
+	--brand-color: #740627;
+	--brand-color-dark: #2b020f;
+	--brand-color-light: #bd0a3f;
+	--accent-color: #e0092f;
+	--accent-color-dark: #960620;
+	--accent-color-light: #960620;
+	--base-text-color: #2a2a2a;
+	--base-link-color: #6b7280;
+	--h1-h6-color: #2a2a2a;
+	--animation-duration: 0.3s;
+	--animation-timing-function: ease;
+	--input-x: 20px;
+	--gutter: 25px;
+	--input-color: #740627;
+	--input-placeholder-color: #afa08e;
+	--input-bg-color: white;
+	--input-radius: 0;
+	--input-border-color: #cfcfcf;
+	--input-focus-border-color: #aeaeae;
+	--form-theme-color: #07c8bc;
+	--checkbox-size: 20px;
+	--radio-size: 20px;
+	--label-fz: 14px;
+	--label-color: #740627;
+	--error-color: #e04562;
+	--error-bg-color: #fadee3;
+	--form-col-gutter: 15px;
+	--form-row-margin: 22.5px;
+	--h1: 54px;
+	--h2: 42px;
+	--h3: 26px;
+	--h4: 20px;
+	--h5: 18px;
+	--h6: 16px;
+	--btn-y: 15px;
+	--btn-x: 20px;
+	--btn-b: 1px;
+	--btn-r: 0;
+	--btn-fz: 16px;
+}
+@media (max-width: 1023px) {
+	:root {
+		--base-font-size: 16px;
+		--base-line-height: 28px;
+	}
+	:root {
+		--h1: 30px;
+		--h2: 32px;
+		--h3: 26px;
+		--h4: 20px;
+		--h5: 18px;
+		--h6: 16px;
+	}
+}
+@media (max-width: 667px) {
+	:root {
+		--btn-y: 15px;
+		--btn-x: 20px;
+		--btn-b: 1px;
+		--btn-r: 0;
+		--btn-fz: 16px;
+	}
+}
+@media (min-width: 812px) and (max-height: 414px) and (orientation: landscape) {
+	:root {
+		--gutter: 50px;
+	}
+}
