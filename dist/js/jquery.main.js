@@ -6,6 +6,7 @@ jQuery(function () {
 	isElementExist(".articles", initArticles);
 
 	initAccordion();
+	initSearchForm();
 	initCustomForms();
 });
 
@@ -24,6 +25,23 @@ function isElementExist(_el, _cb) {
 			console.log(e);
 		}
 	}
+}
+
+function initSearchForm() {
+	$('.header-search .btn-search').on('click', function () {
+		if (!$(this).closest('.header-search').hasClass('open')) {
+			$(this).closest('.header-search').addClass('open');
+			return false;
+		} else if (!$(this).closest('.header-search').find('input.form-control').val().length) {
+			$(this).closest('.header-search').removeClass('open');
+			return false;
+		}
+	});
+
+	$('.btn-cancel').on('click', function (e) {
+		e.preventDefault();
+		$(this).closest('.header-search').removeClass('open');
+	});
 }
 
 function initAccordion() {

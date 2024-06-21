@@ -4,12 +4,12 @@
 	--base-font-size: 2rem;
 	--base-line-height: 26px;
 	--vertical-rhythm: calc(var(--base-line-height) * 1em);
-	--brand-color: #740627;
-	--brand-color-dark: #2b020f;
-	--brand-color-light: #bd0a3f;
-	--accent-color: #e0092f;
-	--accent-color-dark: #960620;
-	--accent-color-light: #960620;
+	--brand-color: #0c233c;
+	--brand-color-dark: black;
+	--brand-color-light: #19487c;
+	--accent-color: #0354d6;
+	--accent-color-dark: #02368b;
+	--accent-color-light: #02368b;
 	--base-text-color: #2a2a2a;
 	--base-link-color: #6b7280;
 	--h1-h6-color: #2a2a2a;
@@ -17,7 +17,7 @@
 	--animation-timing-function: ease;
 	--input-x: 20px;
 	--gutter: 25px;
-	--input-color: #740627;
+	--input-color: #2a2a2a;
 	--input-placeholder-color: #afa08e;
 	--input-bg-color: white;
 	--input-radius: 0;
@@ -27,7 +27,7 @@
 	--checkbox-size: 20px;
 	--radio-size: 20px;
 	--label-fz: 14px;
-	--label-color: #740627;
+	--label-color: #0c233c;
 	--error-color: #e04562;
 	--error-bg-color: #fadee3;
 	--form-col-gutter: 15px;
