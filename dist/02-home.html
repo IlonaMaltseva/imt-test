@@ -10,12 +10,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poller+One&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
 	<link media="all" rel="stylesheet" href="css/root.css">
 	<link media="all" rel="stylesheet" href="css/style.css">
-	<title>Insuremytrip</title>
+	<title>Insure My Trip</title>
 </head>
 
 
 <body>
-	<div class="wrapper" style="max-width: 1440px; margin: 0 auto;">
+	<div class="wrapper wrapper__container">
 		<header class="header">
 			<div class="header__container container">
 				<a href="#" class="cta-btn hidden--lg">
@@ -141,48 +141,63 @@
 						<div class="tile-insurance__content">
 							<h2 class="tile-insurance__title title--l">Why purchase travel insurance</h2>
 							<p>We know every trip is different, and so are your travel concerns. As the nation’s original travel insurance comparison site, InsureMyTrip has over 20 years of experience connecting travelers like you with the best policy for your trip.</p>
-							<div class="visible--md">
+							<div class="visible--sm">
 								<a href="#" class="btn btn--primary">Learn more</a>
 							</div>
 						</div>
 						<div class="tile-insurance__links">
-							<ul class="link-list">
-								<li class="link-list__item">
-									<a class="card-link" href="#">
+							<ul class="card-list">
+								<li class="card-list__item">
+									<div class="card-link">
 										<span class="card-link__title">Medical Emergencies</span>
-										<span class="card-link__icon"></span>
-									</a>
+										<a class="card-link__toggle" href="#"></a>
+										<div class="card-link__expanded">
+											<p>Many regular health insurance plans do not cover medical expenses incurred abroad. Travel insurance can provide coverage for medical emergencies, hospital stays, and medical evacuations.</p>
+										</div>
+									</div>
 								</li>
-								<li class="link-list__item">
-									<a class="card-link" href="#">
-										<span class="card-link__title">Medical Emergencies</span>
-										<span class="card-link__icon"></span>
-									</a>
+								<li class="card-list__item">
+									<div class="card-link">
+										<span class="card-link__title">Emergency Evacuations</span>
+										<a class="card-link__toggle" href="#"></a>
+										<div class="card-link__expanded">
+											<p>Many regular health insurance plans do not cover medical expenses incurred abroad. Travel insurance can provide coverage for medical emergencies, hospital stays, and medical evacuations.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
-							<ul class="link-list">
-								<li class="link-list__item">
-									<a class="card-link" href="#">
-										<span class="card-link__title">Emergency Evacuations</span>
-										<span class="card-link__icon"></span>
-									</a>
-								</li>
-								<li class="link-list__item">
-									<a class="card-link" href="#">
-										<span class="card-link__title">Lost or delayed baggage</span>
-										<span class="card-link__icon"></span>
-									</a>
-								</li>
-								<li class="link-list__item">
-									<a class="card-link" href="#">
+							<ul class="card-list">
+								<li class="card-list__item">
+									<div class="card-link">
 										<span class="card-link__title">Medical Emergencies</span>
-										<span class="card-link__icon"></span>
-									</a>
+										<a class="card-link__toggle" href="#"></a>
+										<div class="card-link__expanded">
+											<p>Many regular health insurance plans do not cover medical expenses incurred abroad. Travel insurance can provide coverage for medical emergencies, hospital stays, and medical evacuations.</p>
+										</div>
+									</div>
+								</li>
+								<li class="card-list__item">
+									<div class="card-link">
+										<span class="card-link__title">Lost or delayed baggage</span>
+										<a class="card-link__toggle" href="#"></a>
+										<div class="card-link__expanded">
+											<p>Many regular health insurance plans do not cover medical expenses incurred abroad. Travel insurance can provide coverage for medical emergencies, hospital stays, and medical evacuations.</p>
+										</div>
+									</div>
+								</li>
+								<li class="card-list__item">
+									<div class="card-link">
+										<span class="card-link__title">Travel delays</span>
+										<a class="card-link__toggle" href="#"></a>
+										<div class="card-link__expanded">
+											<p>Many regular health insurance plans do not cover medical expenses incurred abroad. Travel insurance can provide coverage for medical emergencies, hospital stays, and medical evacuations.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<div class="hidden--md">
+					<div class="hidden--sm">
 						<a href="#" class="btn btn--primary w-100">Learn more</a>
 					</div>
 				</div>
@@ -190,7 +205,7 @@
 			<section class="section">
 				<div class="container">
 					<h2 class="headtitle">Cover your next trip</h2>
-					<div class="services">
+					<div class="slider-services">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="card-service">
@@ -242,7 +257,7 @@
 							</div>
 						</div>
 					</div>
-					<hr class="divider">
+					<hr class="divider visible--md">
 				</div>
 			</section>
 			<section class="section">
@@ -306,10 +321,10 @@
 					</div>
 				</div>
 			</section>
-			<section class="section bg--green">
+			<section class="section section--start bg--green">
 				<div class="container">
 					<h2 class="headtitle">Trusted by our customers &amp; companies <br> with over 100k reviews</h2>
-					<div class="testimonials">
+					<div class="slider-testimonials">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="card-testimonial">
@@ -391,7 +406,7 @@
 									</ul>
 									<blockquote class="card-testimonial__quote">
 										<p>The agent really helped me to make the best purchase option for our unique situation. He was patient, had all the answers to my questions, thought my trip through and was very knowledgeable.</p>
-										<cite>– James C.</cite>
+										<cite>– Tom P.</cite>
 									</blockquote>
 								</div>
 							</div>
@@ -447,23 +462,23 @@
 					<hr class="divider">
 				</div>
 			</section>
-			<section class="section">
+			<section class="section section--start">
 				<div class="container">
 					<div class="section-head">
 						<h3 class="section-head__title">Travel news and stories</h3>
-						<a href="#" class="btn-link visible--md">
+						<a href="#" class="btn-link visible--sm">
 							Explore more articles
 							<i class="icon icon-arrow"></i>
 						</a>
 					</div>
-					<div class="articles">
+					<div class="slider-articles">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="card-article">
 									<span class="card-article__tag">Article Category</span>
 									<div class="card-article__inner">
 										<h6 class="card-article__subtitle">Travel Advice</h6>
-										<h4 class="card-article__title"><a href="#">7 Ways to Prevent Seasickness on a Cruise →</a></h4>
+										<h4 class="card-article__title"><a href="#">7 Ways to Prevent Seasickness on a Cruise</a></h4>
 									</div>
 									<div class="card-article__img">
 										<img src="img/img-02.jpg" width="395" alt="image description" srcset="img/img-02@2x.jpg 2x">
@@ -475,7 +490,7 @@
 									<span class="card-article__tag">Article Category</span>
 									<div class="card-article__inner">
 										<h6 class="card-article__subtitle">Travel Advice</h6>
-										<h4 class="card-article__title"><a href="#">7 Ways to Prevent Seasickness on a Cruise →</a></h4>
+										<h4 class="card-article__title"><a href="#">7 Ways to Prevent Seasickness on a Cruise</a></h4>
 									</div>
 									<div class="card-article__img">
 										<img src="img/img-02.jpg" width="395" alt="image description" srcset="img/img-02@2x.jpg 2x">
@@ -487,7 +502,7 @@
 									<span class="card-article__tag">Article Category</span>
 									<div class="card-article__inner">
 										<h6 class="card-article__subtitle">Travel Advice</h6>
-										<h4 class="card-article__title"><a href="#">7 Ways to Prevent Seasickness on a Cruise →</a></h4>
+										<h4 class="card-article__title"><a href="#">7 Ways to Prevent Seasickness on a Cruise</a></h4>
 									</div>
 									<div class="card-article__img">
 										<img src="img/img-02.jpg" width="395" alt="image description" srcset="img/img-02@2x.jpg 2x">
@@ -499,7 +514,7 @@
 									<span class="card-article__tag">Article Category</span>
 									<div class="card-article__inner">
 										<h6 class="card-article__subtitle">Travel Advice</h6>
-										<h4 class="card-article__title"><a href="#">7 Ways to Prevent Seasickness on a Cruise →</a></h4>
+										<h4 class="card-article__title"><a href="#">7 Ways to Prevent Seasickness on a Cruise</a></h4>
 									</div>
 									<div class="card-article__img">
 										<img src="img/img-02.jpg" width="395" alt="image description" srcset="img/img-02@2x.jpg 2x">
@@ -508,7 +523,10 @@
 							</div>
 						</div>
 					</div>
-					<a href="#" class="btn-link hidden--md">Explore more articles</a>
+					<a href="#" class="btn-link hidden--sm">
+						Explore more articles
+						<i class="icon icon-arrow"></i>
+					</a>
 				</div>
 			</section>
 		</main>

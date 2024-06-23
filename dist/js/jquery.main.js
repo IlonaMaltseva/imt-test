@@ -6,6 +6,7 @@ jQuery(function () {
 	isElementExist(".slider-articles", initArticles);
 
 	initAccordion();
+	initCardExpanded();
 	initSearchForm();
 	initCustomForms();
 });
@@ -25,6 +26,16 @@ function isElementExist(_el, _cb) {
 			console.log(e);
 		}
 	}
+}
+
+function initCardExpanded() {
+	$('.card-link').on('click', function (e) {
+		e.preventDefault();
+		var $card = $(this).closest('.card-link');
+		var isActive = $card.hasClass('flip--active');
+		$('.card-link').removeClass('flip--active');
+		$card.toggleClass('flip--active', !isActive);
+	});
 }
 
 function initSearchForm() {
