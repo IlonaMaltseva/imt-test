@@ -6,8 +6,6 @@ jQuery(function () {
 	isElementExist(".slider-articles", initArticles);
 
 	initAccordion();
-	initCardExpanded();
-	initSearchForm();
 	initCustomForms();
 });
 
@@ -26,33 +24,6 @@ function isElementExist(_el, _cb) {
 			console.log(e);
 		}
 	}
-}
-
-function initCardExpanded() {
-	$('.card-link').on('click', function (e) {
-		e.preventDefault();
-		var $card = $(this).closest('.card-link');
-		var isActive = $card.hasClass('flip--active');
-		$('.card-link').removeClass('flip--active');
-		$card.toggleClass('flip--active', !isActive);
-	});
-}
-
-function initSearchForm() {
-	$('.header-search .btn-search').on('click', function () {
-		if (!$(this).closest('.header-search').hasClass('open')) {
-			$(this).closest('.header-search').addClass('open');
-			return false;
-		} else if (!$(this).closest('.header-search').find('input.form-control').val().length) {
-			$(this).closest('.header-search').removeClass('open');
-			return false;
-		}
-	});
-
-	$('.btn-cancel').on('click', function (e) {
-		e.preventDefault();
-		$(this).closest('.header-search').removeClass('open');
-	});
 }
 
 function initAccordion() {
@@ -1803,7 +1774,7 @@ function initSmartMenu() {
 		scrollStep: 30, // pixels step when scrolling long sub menus that do not fit in the viewport height
 		scrollAccelerate: true, // accelerate scrolling or use a fixed step
 		showTimeout: 250, // timeout before showing the sub menus
-		hideTimeout: 50, // timeout before hiding the sub menus
+		hideTimeout: 500, // timeout before hiding the sub menus
 		showDuration: 0, // duration for show animation - set to 0 for no animation - matters only if showFunction:null
 		showFunction: null, // custom function to use when showing a sub menu (the default is the jQuery 'show')
 		// don't forget to call complete() at the end of whatever you do
