@@ -27,14 +27,14 @@
 				<div class="nav-drop">
 					<nav class="nav">
 						<div class="nav__wrap">
-							<ul class="header-list visible--lg">
-								<li><a class="header-list__link" href="#">Login</a></li>
-								<li><a class="header-list__link" href="#">Contact US</a></li>
+							<ul class="sublist">
+								<li class="sublist__item"><a class="sublist__link" href="#">Login</a></li>
+								<li class="sublist__item"><a class="sublist__link" href="#">Contact US</a></li>
 							</ul>
 							<ul class="menu">
 								<li class="menu__item">
 									<a class="menu__link" href="#">Products</a>
-									<ul class="sub-menu">
+									<ul class="sub-menu has-submenu">
 										<li><a href="#">Coverage</a></li>
 										<li><a href="#">Explore Plans</a></li>
 										<li><a href="#">Explore Providers</a></li>
@@ -43,7 +43,7 @@
 								</li>
 								<li class="menu__item"><a class="menu__link" href="#">Learn Center</a></li>
 								<li class="menu__item">
-									<a class="menu__link" href="#">Support</a>
+									<a class="menu__link has-submenu" href="#">Support</a>
 									<ul class="sub-menu">
 										<li><a href="#">Insuring Your Trip</a></li>
 										<li><a href="#">Travel Advice</a></li>
@@ -60,10 +60,13 @@
 										<li><a href="#">Get a new quote</a></li>
 									</ul>
 								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link menu__link--search">
+										<span class="hidden--lg">Search</span>
+										<i class="icon icon-search visible--lg"></i>
+									</a>
+								</li>
 							</ul>
-							<a href="#" class="header-search visible--lg">
-								<i class="icon icon-search"></i>
-							</a>
 						</div>
 						<div class="nav__btn">
 							<a href="#" class="btn btn--secondary">Start a quote</a>
