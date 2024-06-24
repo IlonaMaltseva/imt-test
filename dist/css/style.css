@@ -3656,19 +3656,6 @@ body.nav-active .nav-opener:before {
 		padding: 50px;
 		min-height: 180px;
 	}
-	.card-link:hover .card-link__expanded {
-		opacity: 1;
-		-webkit-transform: translateY(0);
-		        transform: translateY(0);
-	}
-	.card-link:hover .card-link__toggle {
-		-webkit-transform: rotate(-45deg);
-		        transform: rotate(-45deg);
-	}
-	.card-link:hover .card-link__toggle::before,
-	.card-link:hover .card-link__toggle::after {
-		background-color: #fff;
-	}
 	.tile-coverage {
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
@@ -3755,6 +3742,19 @@ body.nav-active .nav-opener:before {
 	}
 	.tile-insurance {
 		gap: 80px;
+	}
+	.card-link:hover .card-link__expanded {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+	.card-link:hover .card-link__toggle {
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+	}
+	.card-link:hover .card-link__toggle::before,
+	.card-link:hover .card-link__toggle::after {
+		background-color: #fff;
 	}
 	.header {
 		min-height: 120px;

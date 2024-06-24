@@ -32,7 +32,7 @@ function initCardExpanded() {
 
 		window_width = $(window).width();
 
-		if (window_width < 1023) {
+		if (window_width < 1200) {
 			$('.card-link').on('click', function (e) {
 				e.preventDefault();
 				var $card = $(this).closest('.card-link');
@@ -40,12 +40,12 @@ function initCardExpanded() {
 				$('.card-link').removeClass('flip--active');
 				$card.toggleClass('flip--active', !isActive);
 			});
-			$('.card-link__toggle').on('click', function (e) {
-				e.preventDefault();
-				$(this).closest('.card-list').removeClass('flip--active');
-			});
 		}
 
+	});
+	$('.card-link__toggle').on('click', function (e) {
+		e.preventDefault();
+		$(this).closest('.card-list').removeClass('flip--active');
 	});
 }
 
