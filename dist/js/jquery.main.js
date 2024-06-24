@@ -28,19 +28,25 @@ function isElementExist(_el, _cb) {
 }
 
 function initCardExpanded() {
-	if ($(window).innerWidth() < 1023) {
-		$('.card-link').on('click', function (e) {
-			e.preventDefault();
-			var $card = $(this).closest('.card-link');
-			var isActive = $card.hasClass('flip--active');
-			$('.card-link').removeClass('flip--active');
-			$card.toggleClass('flip--active', !isActive);
-		});
-		$('.card-link__toggle').on('click', function (e) {
-			e.preventDefault();
-			$(this).closest('.card-list').removeClass('flip--active');
-		});
-	}
+	$(window).on('resize load', function () {
+
+		window_width = $(window).width();
+
+		if (window_width < 1023) {
+			$('.card-link').on('click', function (e) {
+				e.preventDefault();
+				var $card = $(this).closest('.card-link');
+				var isActive = $card.hasClass('flip--active');
+				$('.card-link').removeClass('flip--active');
+				$card.toggleClass('flip--active', !isActive);
+			});
+			$('.card-link__toggle').on('click', function (e) {
+				e.preventDefault();
+				$(this).closest('.card-list').removeClass('flip--active');
+			});
+		}
+
+	});
 }
 
 function initAccordion() {
