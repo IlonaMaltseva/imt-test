@@ -2626,6 +2626,7 @@ body {
 .scroll-cover {
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
+	height: 100%;
 	padding-right: 40px;
 }
 .scroll-cover::-webkit-scrollbar {
