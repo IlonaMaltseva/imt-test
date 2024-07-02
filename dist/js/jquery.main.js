@@ -31,6 +31,7 @@ function initSidebarExpanded(){
 	$('.aside-tile__title').on('click', function(e) {
 		if ($(window).innerWidth() < 1024) {
 			e.preventDefault();
+			$(this).closest('.aside-tile').toggleClass('open');
 			$('.aside-tile__content').slideToggle();
 		}
 	});
