@@ -2360,6 +2360,7 @@ body {
 }
 
 .section {
+	text-align: center;
 	padding: 40px 0;
 }
 .section--offset-bottom {
