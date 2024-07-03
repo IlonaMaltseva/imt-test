@@ -5,6 +5,7 @@ jQuery(function () {
 	isElementExist(".slider-articles", initArticles);
 
 	initAccordion();
+	initShowMoreText();
 	initSidebarExpanded();
 	initMenu();
 	initCardExpanded();
@@ -25,6 +26,13 @@ function isElementExist(_el, _cb) {
 			console.log(e);
 		}
 	}
+}
+
+function initShowMoreText(){
+	$('.btn-toggle').on('click', function(e){
+		e.preventDefault();
+		$(this).closest('.content-tile__inner').toggleClass('open');
+	});
 }
 
 function initSidebarExpanded(){
