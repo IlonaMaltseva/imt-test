@@ -447,7 +447,7 @@ textarea:not([rows]) {
 	font-display: block;
 }
 [class^=icon-],
-.link-row__link::before,
+.link-primary::before,
 [class*=" icon-"] {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: "icomoon" !important;
@@ -470,12 +470,12 @@ textarea:not([rows]) {
 	content: "\e90d";
 }
 
-.icon-arrow-thin:before,
-.link-row__link:before {
+.icon-arrow-thin:before {
 	content: "\e90b";
 }
 
-.icon-arrow:before {
+.icon-arrow:before,
+.link-primary:before {
 	content: "\e90a";
 }
 
@@ -3140,25 +3140,8 @@ body {
 	margin: 0;
 }
 .link-list__item {
-	border-bottom: 1px solid #bfbfbf;
-}
-.link-list__link {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
 	padding: 10px 0;
-}
-.link-list__link:hover {
-	color: #0354d6;
-}
-.link-list__link .icon {
-	font-size: 14px;
+	border-bottom: 1px solid #bfbfbf;
 }
 
 .section-program .headtitle {
@@ -3346,24 +3329,30 @@ body {
 	gap: 14px;
 	margin: 0;
 }
-.link-row__link {
+.link-row__item {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	font-size: 20px;
-	line-height: 1.2;
+	width: 100%;
 	padding: 20px;
-	position: relative;
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.15);
 	        box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.15);
 }
-.link-row__link::before {
+
+.link-primary {
+	display: inline-block;
+	position: relative;
+	font-size: 20px;
+	line-height: 1.2;
+	width: 100%;
+}
+.link-primary::before {
 	position: absolute;
 	top: 50%;
-	right: 20px;
+	right: 0;
 	font-size: 14px;
 	-webkit-transform: translateY(-50%);
 	        transform: translateY(-50%);
