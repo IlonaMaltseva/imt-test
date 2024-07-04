@@ -46,10 +46,6 @@
 }
 @media (max-width: 1023px) {
 	:root {
-		--base-font-size: 16px;
-		--base-line-height: 28px;
-	}
-	:root {
 		--h1: 30px;
 		--h2: 32px;
 		--h3: 26px;

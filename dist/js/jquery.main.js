@@ -32,6 +32,13 @@ function initShowMoreText(){
 	$('.btn-toggle').on('click', function(e){
 		e.preventDefault();
 		$(this).closest('.content-tile__inner').toggleClass('open');
+		
+		// Toggle the text of the button
+		if ($(this).closest('.content-tile__inner').hasClass('open')) {
+			$(this).html('Show Less<span class="btn-toggle__icon">&nbsp;</span>');
+		} else {
+			$(this).html('Show More<span class="btn-toggle__icon">&nbsp;</span>');
+		}
 	});
 }
 
@@ -58,6 +65,22 @@ function initMenu(){
 			$(this).closest('.menu__item').addClass('submenu-open');
 			$(this).closest('.menu__item').siblings('li.submenu-open').find('.menu__item.submenu-open').removeClass('submenu-open');
 			$(this).closest('.menu__item').siblings('li.submenu-open').removeClass('submenu-open');
+		}
+	});
+
+	$('.menu__link, .sub-menu').on('mouseenter', function() {
+		if ($(window).width() > 1023) {
+			clearTimeout(submenuTimeout);
+			$(this).closest('.menu__item').addClass('submenu-open');
+		}
+	});
+	
+	$('.menu__link, .sub-menu').on('mouseleave', function() {
+		if ($(window).width() > 1023) {
+			const $menuItem = $(this).closest('.menu__item');
+			submenuTimeout = setTimeout(function() {
+				$menuItem.removeClass('submenu-open');
+			}, 200);
 		}
 	});
 
