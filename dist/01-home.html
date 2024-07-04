@@ -19,7 +19,9 @@
 		<header class="header">
 			<div class="header__container container">
 				<a href="#" class="cta-btn hidden--lg">
-					<i class="icon icon-phone"></i>
+					<svg class="cta-btn__icon" width="27" height="23">
+						<use xlink:href="img/sprite-icon.svg#icon-phone"></use>
+					</svg>
 				</a>
 				<a href="#" class="logo">
 					<img src="img/imt-logo.svg" width="275" alt="IMT">
@@ -32,38 +34,46 @@
 								<li class="sublist__item"><a class="sublist__link" href="#">Contact US</a></li>
 							</ul>
 							<ul class="menu">
-								<li class="menu__item has-submenu">
+								<li class="menu__item has-drop">
 									<a class="menu__link" href="#">Products</a>
-									<ul class="sub-menu">
-										<li><a href="#">Coverage</a></li>
-										<li><a href="#">Explore Plans</a></li>
-										<li><a href="#">Explore Providers</a></li>
-										<li><a href="#">Ratings &amp; Reviews</a></li>
-									</ul>
+									<div class="dropdown">
+										<ul class="drop-list">
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Coverage</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Explore Plans</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Explore Providers</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Ratings &amp; Reviews</a></li>
+										</ul>
+									</div>
 								</li>
 								<li class="menu__item"><a class="menu__link" href="#">Learn Center</a></li>
-								<li class="menu__item has-submenu">
+								<li class="menu__item has-drop">
 									<a class="menu__link" href="#">Support</a>
-									<ul class="sub-menu">
-										<li><a href="#">Insuring Your Trip</a></li>
-										<li><a href="#">Travel Advice</a></li>
-										<li><a href="#">Plans &amp; Coverage</a></li>
-										<li><a href="#">Policies &amp; Claims</a></li>
-										<li><a href="#">FAQ's</a></li>
-										<li><a href="#">Destinations</a></li>
-										<li><a href="#">InsureMyTrip Services</a></li>
-									</ul>
+									<div class="dropdown">
+										<ul class="drop-list">
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Insuring Your Trip</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Travel Advice</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Plans &amp; Coverage</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Policies &amp; Claims</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">FAQ's</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Destinations</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">InsureMyTrip Services</a></li>
+										</ul>
+									</div>
 								</li>
 								<li class="menu__item">
 									<a class="menu__link" href="#">Your Quote</a>
-									<ul class="sub-menu">
-										<li><a href="#">Get a new quote</a></li>
-									</ul>
+									<div class="dropdown">
+										<ul class="drop-list">
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Get a new quote</a></li>
+										</ul>
+									</div>
 								</li>
 								<li class="menu__item">
 									<a href="#" class="menu__link menu__link--search">
 										<span class="hidden--lg">Search</span>
-										<i class="icon icon-search visible--lg"></i>
+										<svg width="20" height="20" class="icon visible--lg">
+											<use xlink:href="img/sprite-icon.svg#icon-search"></use>
+										</svg>
 									</a>
 								</li>
 							</ul>
@@ -80,7 +90,11 @@
 			<section class="section-hero">
 				<div class="container">
 					<div class="hero-tile">
-						<i class="hero-tile__icon icon-pin"></i>
+						<span class="hero-tile__icon">
+							<svg width="56" height="83">
+								<use xlink:href="img/sprite-icon.svg#icon-pin"></use>
+							</svg>
+						</span>
 						<h1>Some Text Goes Here</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						<a href="#" class="btn btn--secondary">Start a quote</a>
@@ -323,7 +337,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section section--testimonial bg--green">
+			<section class="section text--start bg--green">
 				<div class="container">
 					<h2 class="headtitle">Trusted by our customers &amp; companies <br> with over 100k reviews</h2>
 					<div class="slider-testimonials">
@@ -335,19 +349,29 @@
 									</span>
 									<ul class="rating">
 										<li class="rating__item active">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 										<li class="rating__item active">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 										<li class="rating__item active">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 										<li class="rating__item active">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 										<li class="rating__item">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 									</ul>
 									<blockquote class="card-testimonial__quote">
@@ -363,19 +387,29 @@
 									</span>
 									<ul class="rating">
 										<li class="rating__item active">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 										<li class="rating__item active">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 										<li class="rating__item active">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 										<li class="rating__item active">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 										<li class="rating__item">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 									</ul>
 									<blockquote class="card-testimonial__quote">
@@ -391,19 +425,29 @@
 									</span>
 									<ul class="rating">
 										<li class="rating__item active">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 										<li class="rating__item active">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 										<li class="rating__item active">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 										<li class="rating__item active">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 										<li class="rating__item">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 									</ul>
 									<blockquote class="card-testimonial__quote">
@@ -419,19 +463,29 @@
 									</span>
 									<ul class="rating">
 										<li class="rating__item active">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 										<li class="rating__item active">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 										<li class="rating__item active">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 										<li class="rating__item active">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 										<li class="rating__item">
-											<i class="icon icon-star"></i>
+											<svg class="rating__icon" width="50" height="48">
+												<use xlink:href="img/sprite-icon.svg#icon-star"></use>
+											</svg>
 										</li>
 									</ul>
 									<blockquote class="card-testimonial__quote">
@@ -592,27 +646,37 @@
 					<ul class="socials">
 						<li>
 							<a class="socials__link" href="#" target="_blank">
-								<i class="icon icon-instagram"></i>
+								<svg width="28" height="28">
+									<use xlink:href="img/sprite-icon.svg#icon-instagram"></use>
+								</svg>
 							</a>
 						</li>
 						<li>
 							<a class="socials__link" href="#" target="_blank">
-								<i class="icon icon-facebook"></i>
+								<svg width="30" height="29">
+									<use xlink:href="img/sprite-icon.svg#icon-facebook"></use>
+								</svg>
 							</a>
 						</li>
 						<li>
 							<a class="socials__link" href="#" target="_blank">
-								<i class="icon icon-youtube"></i>
+								<svg width="30" height="21">
+									<use xlink:href="img/sprite-icon.svg#icon-youtube"></use>
+								</svg>
 							</a>
 						</li>
 						<li>
 							<a class="socials__link" href="#" target="_blank">
-								<i class="icon icon-x"></i>
+								<svg width="25" height="25">
+									<use xlink:href="img/sprite-icon.svg#icon-x"></use>
+								</svg>
 							</a>
 						</li>
 						<li>
 							<a class="socials__link" href="#" target="_blank">
-								<i class="icon icon-pinterest"></i>
+								<svg width="28" height="28">
+									<use xlink:href="img/sprite-icon.svg#icon-pinterest"></use>
+								</svg>
 							</a>
 						</li>
 					</ul>

@@ -31,10 +31,10 @@ function isElementExist(_el, _cb) {
 function initShowMoreText(){
 	$('.btn-toggle').on('click', function(e){
 		e.preventDefault();
-		$(this).closest('.content-tile__inner').toggleClass('open');
+		$(this).closest('.expanded-cover').toggleClass('open');
 		
 		// Toggle the text of the button
-		if ($(this).closest('.content-tile__inner').hasClass('open')) {
+		if ($(this).closest('.expanded-cover').hasClass('open')) {
 			$(this).html('Show Less<span class="btn-toggle__icon">&nbsp;</span>');
 		} else {
 			$(this).html('Show More<span class="btn-toggle__icon">&nbsp;</span>');
@@ -54,13 +54,13 @@ function initSidebarExpanded(){
 
 function initMenu(){
 	$('.menu__item').each(function () {
-		if ($(this).find('.sub-menu').length) {
-			$(this).addClass('has-submenu');
+		if ($(this).find('.dropdown').length) {
+			$(this).addClass('has-drop');
 		}
 	});
 
 	$('.menu__link').on('click', function (e) {
-		if ($(this).siblings('.sub-menu').length && !$(this).closest('.menu__item').hasClass('submenu-open')) {
+		if ($(this).siblings('.dropdown').length && !$(this).closest('.menu__item').hasClass('submenu-open')) {
 			e.preventDefault();
 			$(this).closest('.menu__item').addClass('submenu-open');
 			$(this).closest('.menu__item').siblings('li.submenu-open').find('.menu__item.submenu-open').removeClass('submenu-open');
@@ -68,14 +68,14 @@ function initMenu(){
 		}
 	});
 
-	$('.menu__link, .sub-menu').on('mouseenter', function() {
+	$('.menu__link, .dropdown').on('mouseenter', function() {
 		if ($(window).width() > 1023) {
 			clearTimeout(submenuTimeout);
 			$(this).closest('.menu__item').addClass('submenu-open');
 		}
 	});
 	
-	$('.menu__link, .sub-menu').on('mouseleave', function() {
+	$('.menu__link, .dropdown').on('mouseleave', function() {
 		if ($(window).width() > 1023) {
 			const $menuItem = $(this).closest('.menu__item');
 			submenuTimeout = setTimeout(function() {
@@ -94,7 +94,9 @@ function initCardExpanded() {
 	$(window).on('resize load', function () {
 
 		window_width = $(window).width();
-
+	
+		$('.card-link').off('click');
+	
 		if (window_width < 1200) {
 			$('.card-link').on('click', function (e) {
 				e.preventDefault();
@@ -104,12 +106,13 @@ function initCardExpanded() {
 				$card.toggleClass('flip--active', !isActive);
 			});
 		}
-
 	});
+	
 	$('.card-link__toggle').on('click', function (e) {
 		e.preventDefault();
 		$(this).closest('.card-list').removeClass('flip--active');
 	});
+	
 }
 
 function initAccordion() {

@@ -19,7 +19,9 @@
 		<header class="header">
 			<div class="header__container container">
 				<a href="#" class="cta-btn hidden--lg">
-					<i class="icon icon-phone"></i>
+					<svg class="cta-btn__icon" width="27" height="23">
+						<use xlink:href="img/sprite-icon.svg#icon-phone"></use>
+					</svg>
 				</a>
 				<a href="#" class="logo">
 					<img src="img/imt-logo.svg" width="275" alt="IMT">
@@ -32,38 +34,46 @@
 								<li class="sublist__item"><a class="sublist__link" href="#">Contact US</a></li>
 							</ul>
 							<ul class="menu">
-								<li class="menu__item has-submenu">
+								<li class="menu__item has-drop">
 									<a class="menu__link" href="#">Products</a>
-									<ul class="sub-menu">
-										<li><a href="#">Coverage</a></li>
-										<li><a href="#">Explore Plans</a></li>
-										<li><a href="#">Explore Providers</a></li>
-										<li><a href="#">Ratings &amp; Reviews</a></li>
-									</ul>
+									<div class="dropdown">
+										<ul class="drop-list">
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Coverage</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Explore Plans</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Explore Providers</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Ratings &amp; Reviews</a></li>
+										</ul>
+									</div>
 								</li>
 								<li class="menu__item"><a class="menu__link" href="#">Learn Center</a></li>
-								<li class="menu__item has-submenu">
+								<li class="menu__item has-drop">
 									<a class="menu__link" href="#">Support</a>
-									<ul class="sub-menu">
-										<li><a href="#">Insuring Your Trip</a></li>
-										<li><a href="#">Travel Advice</a></li>
-										<li><a href="#">Plans &amp; Coverage</a></li>
-										<li><a href="#">Policies &amp; Claims</a></li>
-										<li><a href="#">FAQ's</a></li>
-										<li><a href="#">Destinations</a></li>
-										<li><a href="#">InsureMyTrip Services</a></li>
-									</ul>
+									<div class="dropdown">
+										<ul class="drop-list">
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Insuring Your Trip</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Travel Advice</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Plans &amp; Coverage</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Policies &amp; Claims</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">FAQ's</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Destinations</a></li>
+											<li class="drop-list__item"><a class="drop-list__link" href="#">InsureMyTrip Services</a></li>
+										</ul>
+									</div>
 								</li>
 								<li class="menu__item">
 									<a class="menu__link" href="#">Your Quote</a>
-									<ul class="sub-menu">
-										<li><a href="#">Get a new quote</a></li>
-									</ul>
+									<div class="dropdown">
+										<ul class="drop-list">
+											<li class="drop-list__item"><a class="drop-list__link" href="#">Get a new quote</a></li>
+										</ul>
+									</div>
 								</li>
 								<li class="menu__item">
 									<a href="#" class="menu__link menu__link--search">
 										<span class="hidden--lg">Search</span>
-										<i class="icon icon-search visible--lg"></i>
+										<svg width="20" height="20" class="icon visible--lg">
+											<use xlink:href="img/sprite-icon.svg#icon-search"></use>
+										</svg>
 									</a>
 								</li>
 							</ul>
@@ -96,14 +106,8 @@
 				<div class="container">
 					<div class="content-tile">
 						<div class="content-tile__inner">
-							<div class="content-tile__text">
-								<p>Comprehensive travel insurance plans offer the most benefits of all plan types. These plans provide the best protection for the investment you have made in your trip. They can be used for both leisure and business travel, which make them ideal for nearly every traveler. In addition to trip cancellation, most comprehensive plans offer coverage such as trip interruption, baggage, medical,&nbsp;dental, emergency evacuation, 24-hour traveler assistance and accidental death benefits. These benefits are very common for comprehensive travel insurance plans, but they can vary per plan. Some comprehensive plans offer additional coverage, such as rental car damage or financial default. Many plans have optional benefits you can add-on for additional premium like Cancel for Any Reason or a pre-existing condition waiver – but these can be time-sensitive to the date of your first trip payment.&nbsp;Cruise insurance&nbsp;is a specialized type of comprehensive plans that caters to those planning to take a cruise. Coverage limits range greatly depending on the comprehensive plan that is purchased. By comparing the plans you can find the best plan for your budget and your specific travel needs.</p>
-								<a href="#" class="btn btn--primary w-100">Get a Comprehensive Quote</a>
-							</div>
-							<a href="#" class="btn-toggle">
-								Show More
-								<span class="btn-toggle__icon">&nbsp;</span>
-							</a>
+							<p>Comprehensive travel insurance plans offer the most benefits of all plan types. These plans provide the best protection for the investment you have made in your trip. They can be used for both leisure and business travel, which make them ideal for nearly every traveler. In addition to trip cancellation, most comprehensive plans offer coverage such as trip interruption, baggage, medical,&nbsp;dental, emergency evacuation, 24-hour traveler assistance and accidental death benefits. These benefits are very common for comprehensive travel insurance plans, but they can vary per plan. Some comprehensive plans offer additional coverage, such as rental car damage or financial default. Many plans have optional benefits you can add-on for additional premium like Cancel for Any Reason or a pre-existing condition waiver – but these can be time-sensitive to the date of your first trip payment.&nbsp;Cruise insurance&nbsp;is a specialized type of comprehensive plans that caters to those planning to take a cruise. Coverage limits range greatly depending on the comprehensive plan that is purchased. By comparing the plans you can find the best plan for your budget and your specific travel needs.</p>
+							<a href="#" class="btn btn--primary w-100">Get a Comprehensive Quote</a>
 						</div>
 						<aside class="content-tile__aside">
 							<div class="aside-tile">
@@ -143,7 +147,11 @@
 							</tr>
 							<tr>
 								<td>Trip cancellation </td>
-								<td><i class="icon icon-check"></i></td>
+								<td>
+									<svg width="21" height="17" fill="#0C233C">
+										<use xlink:href="img/sprite-icon.svg#icon-check"></use>
+									</svg>
+								</td>
 							</tr>
 							<tr>
 								<td>Trip interruption </td>
@@ -151,35 +159,67 @@
 							</tr>
 							<tr>
 								<td>Cancel for any reason </td>
-								<td><i class="icon icon-check"></i></td>
+								<td>
+									<svg width="21" height="17" fill="#0C233C">
+										<use xlink:href="img/sprite-icon.svg#icon-check"></use>
+									</svg>
+								</td>
 							</tr>
 							<tr>
 								<td>Baggage</td>
-								<td><i class="icon icon-check"></i></td>
+								<td>
+									<svg width="21" height="17" fill="#0C233C">
+										<use xlink:href="img/sprite-icon.svg#icon-check"></use>
+									</svg>
+								</td>
 							</tr>
 							<tr>
 								<td>Medical</td>
-								<td><i class="icon icon-check"></i></td>
+								<td>
+									<svg width="21" height="17" fill="#0C233C">
+										<use xlink:href="img/sprite-icon.svg#icon-check"></use>
+									</svg>
+								</td>
 							</tr>
 							<tr>
 								<td>Dental</td>
-								<td><i class="icon icon-check"></i></td>
+								<td>
+									<svg width="21" height="17" fill="#0C233C">
+										<use xlink:href="img/sprite-icon.svg#icon-check"></use>
+									</svg>
+								</td>
 							</tr>
 							<tr>
 								<td>Pre-existing conditions</td>
-								<td><i class="icon icon-check"></i></td>
+								<td>
+									<svg width="21" height="17" fill="#0C233C">
+										<use xlink:href="img/sprite-icon.svg#icon-check"></use>
+									</svg>
+								</td>
 							</tr>
 							<tr>
 								<td>Evacuation</td>
-								<td><i class="icon icon-check"></i></td>
+								<td>
+									<svg width="21" height="17" fill="#0C233C">
+										<use xlink:href="img/sprite-icon.svg#icon-check"></use>
+									</svg>
+								</td>
 							</tr>
 							<tr>
 								<td>Accident</td>
-								<td><i class="icon icon-check"></i></td>
+								<td>
+									<svg width="21" height="17" fill="#0C233C">
+										<use xlink:href="img/sprite-icon.svg#icon-check"></use>
+									</svg>
+								</td>
 							</tr>
 							<tr>
 								<td>24-hour assistance</td>
-								<td><i class="icon icon-check"></i></td>
+								<td>
+									<svg width="21" height="17" fill="#0C233C">
+										<use xlink:href="img/sprite-icon.svg#icon-check"></use>
+									</svg>
+								</td>
 							</tr>
 							<tr>
 								<td>Vactation Rental</td>
@@ -288,9 +328,9 @@
 					</a>
 				</div>
 			</section>
-			<section class="section">
+			<section class="section text--start">
 				<div class="container">
-					<h2 class="headtitle title--m">Comprehensive FAQs</h2>
+					<h2 class="headtitle title--s">Comprehensive FAQs</h2>
 					<div class="accordion">
 						<div class="accordion__item">
 							<h5 class="accordion__title">
@@ -450,27 +490,37 @@
 					<ul class="socials">
 						<li>
 							<a class="socials__link" href="#" target="_blank">
-								<i class="icon icon-instagram"></i>
+								<svg width="28" height="28">
+									<use xlink:href="img/sprite-icon.svg#icon-instagram"></use>
+								</svg>
 							</a>
 						</li>
 						<li>
 							<a class="socials__link" href="#" target="_blank">
-								<i class="icon icon-facebook"></i>
+								<svg width="30" height="29">
+									<use xlink:href="img/sprite-icon.svg#icon-facebook"></use>
+								</svg>
 							</a>
 						</li>
 						<li>
 							<a class="socials__link" href="#" target="_blank">
-								<i class="icon icon-youtube"></i>
+								<svg width="30" height="21">
+									<use xlink:href="img/sprite-icon.svg#icon-youtube"></use>
+								</svg>
 							</a>
 						</li>
 						<li>
 							<a class="socials__link" href="#" target="_blank">
-								<i class="icon icon-x"></i>
+								<svg width="25" height="25">
+									<use xlink:href="img/sprite-icon.svg#icon-x"></use>
+								</svg>
 							</a>
 						</li>
 						<li>
 							<a class="socials__link" href="#" target="_blank">
-								<i class="icon icon-pinterest"></i>
+								<svg width="28" height="28">
+									<use xlink:href="img/sprite-icon.svg#icon-pinterest"></use>
+								</svg>
 							</a>
 						</li>
 					</ul>
