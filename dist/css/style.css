@@ -2636,6 +2636,8 @@ body {
 .tile-coverage__visual {
 	overflow: hidden;
 	width: 60%;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
 	border-radius: 12px;
 }
 .tile-coverage__visual img {
