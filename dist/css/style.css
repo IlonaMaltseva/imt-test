@@ -3831,6 +3831,9 @@ body.nav-active .nav-opener:before {
 	.visible--md {
 		display: none !important;
 	}
+	.text--start-md {
+		text-align: left !important;
+	}
 	.hero-tile__icon {
 		display: none;
 	}
