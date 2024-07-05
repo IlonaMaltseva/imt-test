@@ -30,16 +30,15 @@ function isElementExist(_el, _cb) {
 
 function initShowMoreText(){
 	$('.btn-toggle').on('click', function(e){
-		e.preventDefault();
-		$(this).closest('.expanded-cover').toggleClass('open');
-		
-		// Toggle the text of the button
-		if ($(this).closest('.expanded-cover').hasClass('open')) {
-			$(this).html('Show Less<span class="btn-toggle__icon">&nbsp;</span>');
-		} else {
-			$(this).html('Show More<span class="btn-toggle__icon">&nbsp;</span>');
-		}
-	});
+        e.preventDefault();
+        $(this).closest('.expanded-cover').toggleClass('open');
+
+        if ($(this).closest('.expanded-cover').hasClass('open')) {
+            $(this).find('.btn-toggle__text').text('Show Less');
+        } else {
+            $(this).find('.btn-toggle__text').text('Show More');
+        }
+    });
 }
 
 function initSidebarExpanded(){
