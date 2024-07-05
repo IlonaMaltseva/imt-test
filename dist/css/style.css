@@ -2641,6 +2641,9 @@ body {
 .tile-coverage__visual img {
 	display: block;
 	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 .tile-coverage__content p:not(:last-child) {
 	margin-bottom: 24px;
@@ -4114,6 +4117,9 @@ body.nav-active .nav-opener:before {
 		    -ms-flex-direction: row;
 		        flex-direction: row;
 		gap: 60px;
+	}
+	.tile-coverage__visual {
+		height: 650px;
 	}
 	.tile-coverage__content {
 		max-width: 527px;
