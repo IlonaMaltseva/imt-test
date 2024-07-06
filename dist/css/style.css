@@ -3154,9 +3154,9 @@ body {
 .tile-privacy__title {
 	font-weight: normal;
 }
-.tile-privacy__link {
-	display: block;
+.tile-privacy .btn-link {
 	padding: 20px 0;
+	width: 100%;
 	border-bottom: 1px solid #979797;
 }
 
@@ -3341,6 +3341,55 @@ body {
 .table-comprehensive {
 	margin: 0 auto;
 	max-width: 456px;
+}
+
+.tooltip-wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	width: 100%;
+	position: relative;
+}
+.tooltip-wrap__icon {
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
+	fill: #0280a7;
+	opacity: 0.25;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.tooltip-wrap__icon:hover + .tooltip {
+	opacity: 1;
+	pointer-events: auto;
+	-webkit-transition: opacity 0.35s ease;
+	transition: opacity 0.35s ease;
+}
+
+.tooltip {
+	position: absolute;
+	top: 100%;
+	left: 100%;
+	margin-left: -25px;
+	z-index: 9;
+	font-size: 12px;
+	line-height: 1.2;
+	font-weight: normal;
+	padding: 10px;
+	min-width: 150px;
+	background-color: #fff;
+	border-radius: 10px;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+	        box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+	-webkit-transition: all 0s ease 0.35s, opacity 0.35s ease;
+	transition: all 0s ease 0.35s, opacity 0.35s ease;
 }
 
 .header {
@@ -4235,6 +4284,10 @@ body.nav-active .nav-opener:before {
 	}
 	.link-row__item {
 		width: calc(33.333% - 22px);
+	}
+	.tooltip {
+		font-size: 14px;
+		min-width: 200px;
 	}
 	.header {
 		min-height: 80px;
