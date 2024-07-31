@@ -4,13 +4,14 @@ jQuery(function () {
 	isElementExist(".slider-services", initServices);
 	isElementExist(".slider-articles", initArticles);
 
+	initScrollTopButton();
 	initAccordion();
 	initShowMoreText();
 	initSidebarExpanded();
 	initMenu();
 	initCardExpanded();
 	headerScrollUp();
-	initScrollTopButton();
+	initCustomForms();
 });
 
 //-------- -------- -------- --------
@@ -28,6 +29,40 @@ function isElementExist(_el, _cb) {
 			console.log(e);
 		}
 	}
+}
+
+function initScrollTopButton() {
+	var button = $('.btn-scroll');
+	var footer = $('footer'); // Заміни 'footer' на правильний селектор, якщо потрібно
+
+	$(window).on('scroll', function () {
+		var scrollTop = $(this).scrollTop();
+		var windowHeight = $(this).height();
+		var footerTop = footer.offset().top;
+
+		if (scrollTop > 600 && (scrollTop + windowHeight) < footerTop) {
+			button.addClass('show');
+		} else {
+			button.removeClass('show');
+		}
+	});
+
+	button.on('click', function (e) {
+		e.preventDefault();
+		var id = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('html, body').animate({ scrollTop: top }, 1500);
+	});
+}
+
+// initialize custom form elements (checkbox, radio, select) https://github.com/w3co/jcf
+function initCustomForms() {
+	jcf.setOptions('Select', {
+		maxVisibleItems: 8, // visible dropdown items before scroll appear
+		wrapNative: false,
+	});
+
+	jcf.replaceAll();
 }
 
 function headerScrollUp() {
@@ -139,8 +174,13 @@ function initArticles() {
 			spaceBetween: 16,
 			loop: false,
 			breakpoints: {
+				768: {
+					spaceBetween: 16,
+					slidesPerView: 2.8,
+				},
 				1024: {
 					spaceBetween: 34,
+					slidesPerView: 3,
 				}
 			}
 		});
@@ -178,24 +218,6 @@ function initServices() {
 			}
 		});
 	});
-}
-
-function initScrollTopButton() {
-	var button = $('.btn-scroll');
-    $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 600) {
-            button.addClass('show');
-        } else {
-            button.removeClass('show');
-        }
-    });
-
-    button.on('click', function (e) {
-        e.preventDefault();
-		var id  = $(this).attr('href'),
-		  top = $(id).offset().top;
-        $('html, body').animate({ scrollTop: top }, 1500);
-    });
 }
 
 //-------- -------- -------- --------

@@ -81,8 +81,12 @@
 			</div>
 		</header>
 		<main class="main">
-			<section class="section-hero section-hero--center">
+			<section class="section-hero section-hero--center" id="section">
 				<div class="container">
+					<ul class="breadcrumbs">
+						<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Learn</a></li>
+						<li class="breadcrumbs__item"><span>Traveler Tips &amp; Advice</span></li>
+					</ul>
 					<div class="hero-tile hero-tile--center">
 						<span class="hero-tile__icon">
 							<img src="img/icon-pin.svg" width="56" alt="image description">
@@ -98,8 +102,8 @@
 				<div class="container">
 					<div class="nav-holder">
 						<ul class="nav-holder__list">
-							<li class="nav-holder__item active"><a class="nav-holder__link" href="#">All</a></li>
-							<li class="nav-holder__item"><a class="nav-holder__link" href="#">Traveler Advice</a></li>
+							<li class="nav-holder__item"><a class="nav-holder__link" href="#">All</a></li>
+							<li class="nav-holder__item active"><a class="nav-holder__link" href="#">Traveler Advice</a></li>
 							<li class="nav-holder__item"><a class="nav-holder__link" href="#">Plans &amp; Coverage</a></li>
 							<li class="nav-holder__item"><a class="nav-holder__link" href="#">Policy &amp; Claims Information</a></li>
 							<li class="nav-holder__item"><a class="nav-holder__link" href="#">Destinations &amp; Tips</a></li>
@@ -134,7 +138,7 @@
 				<div class="container">
 					<div class="tile-coverage">
 						<div class="tile-coverage__visual">
-							<span class="category-label">ttravel advice</span>
+							<span class="category-label">travel advice</span>
 							<img src="img/img-17.jpg" width="588" alt="image description" srcset="img/img-17@2x.jpg 2x">
 						</div>
 						<div class="tile-coverage__content">
@@ -404,6 +408,12 @@
 							</div>
 						</li>
 					</ul>
+					<a href="#section" class="btn-scroll">
+						<span class="btn-scroll__icon">
+							<img src="img/arrow.svg" alt="image description">
+						</span>
+						<span>Back to top</span>
+					</a>
 				</div>
 			</section>
 			<section class="section-cta bg--bright-blue">
@@ -490,6 +500,7 @@
 	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/jcf.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/jquery.main.js" defer=""></script>
 

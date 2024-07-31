@@ -81,7 +81,7 @@
 			</div>
 		</header>
 		<main class="main">
-			<section class="section-hero section-hero--center">
+			<section class="section-hero section-hero--center" id="section">
 				<div class="container">
 					<div class="hero-tile hero-tile--center">
 						<span class="hero-tile__icon">
@@ -94,7 +94,7 @@
 					<img src="img/hero-image-04.jpg" width="1440" alt="image description" srcset="img/hero-image-04@2x.jpg 2x">
 				</div>
 			</section>
-			<section class="section" id="section">
+			<section class="section">
 				<div class="container">
 					<div class="filter-form">
 						<h3 class="filter-form__title">Refine Results</h3>
@@ -139,24 +139,24 @@
 					</div>
 					<div class="filter-result">
 						<span class="filter-result__title">Displaying <span>17</span> Results</span>
-						<div class="select-field">
-							<select>
-								<option>Sort by</option>
-								<option>Item 1</option>
-								<option>Item 2</option>
-								<option>Item 3</option>
+						<div class="select-field select-field--sort">
+							<select class="sort-drop">
+								<option selected="" disabled="">Sort by</option>
+								<option>Alphabetically (A-Z)</option>
+								<option>Highest rated</option>
+								<option>Most recommended</option>
 							</select>
 						</div>
 					</div>
 					<ul class="list">
 						<li class="list__item">
-							<div class="card-plan">
-								<span class="card-plan__logo">
+							<div class="card-provider">
+								<span class="card-provider__logo">
 									<img src="img/john-hancock.png" width="97" alt="image description" srcset="img/john-hancock@2x.png 2x">
 								</span>
-								<h3 class="card-plan__title">Gold</h3>
-								<div class="card-plan__description">
-									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-plan__link">see more</a></p>
+								<h3 class="card-provider__title">Gold</h3>
+								<div class="card-provider__description">
+									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-provider__link">...see more</a></p>
 								</div>
 								<div class="tag">
 									<a class="tag__btn" href="#">Single</a>
@@ -169,13 +169,13 @@
 							</div>
 						</li>
 						<li class="list__item">
-							<div class="card-plan">
-								<span class="card-plan__logo">
+							<div class="card-provider">
+								<span class="card-provider__logo">
 									<img src="img/berkshire-hathaway.png" width="114" alt="image description" srcset="img/berkshire-hathaway@2x.png 2x">
 								</span>
-								<h3 class="card-plan__title">ExactCare</h3>
-								<div class="card-plan__description">
-									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-plan__link">see more</a></p>
+								<h3 class="card-provider__title">ExactCare</h3>
+								<div class="card-provider__description">
+									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-provider__link">...see more</a></p>
 								</div>
 								<div class="tag">
 									<a class="tag__btn" href="#">Single</a>
@@ -188,13 +188,13 @@
 							</div>
 						</li>
 						<li class="list__item">
-							<div class="card-plan">
-								<span class="card-plan__logo">
+							<div class="card-provider">
+								<span class="card-provider__logo">
 									<img src="img/aig.png" width="77" alt="image description" srcset="img/aig@2x.png 2x">
 								</span>
-								<h3 class="card-plan__title">iTravelInsured SE</h3>
-								<div class="card-plan__description">
-									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-plan__link">see more</a></p>
+								<h3 class="card-provider__title">iTravelInsured SE</h3>
+								<div class="card-provider__description">
+									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-provider__link">...see more</a></p>
 								</div>
 								<div class="tag">
 									<a class="tag__btn" href="#">Single</a>
@@ -207,13 +207,13 @@
 							</div>
 						</li>
 						<li class="list__item">
-							<div class="card-plan">
-								<span class="card-plan__logo">
+							<div class="card-provider">
+								<span class="card-provider__logo">
 									<img src="img/nationwide.png" width="109" alt="image description" srcset="img/nationwide@2x.png 2x">
 								</span>
-								<h3 class="card-plan__title">Essential</h3>
-								<div class="card-plan__description">
-									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-plan__link">see more</a></p>
+								<h3 class="card-provider__title">Essential</h3>
+								<div class="card-provider__description">
+									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-provider__link">...see more</a></p>
 								</div>
 								<div class="tag">
 									<a class="tag__btn" href="#">Single</a>
@@ -226,13 +226,13 @@
 							</div>
 						</li>
 						<li class="list__item">
-							<div class="card-plan">
-								<span class="card-plan__logo">
+							<div class="card-provider">
+								<span class="card-provider__logo">
 									<img src="img/travel-insured.png" width="113" alt="image description" srcset="img/travel-insured@2x.png 2x">
 								</span>
-								<h3 class="card-plan__title">FlexiPax</h3>
-								<div class="card-plan__description">
-									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-plan__link">see more</a></p>
+								<h3 class="card-provider__title">FlexiPax</h3>
+								<div class="card-provider__description">
+									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-provider__link">...see more</a></p>
 								</div>
 								<div class="tag">
 									<a class="tag__btn" href="#">Single</a>
@@ -245,13 +245,13 @@
 							</div>
 						</li>
 						<li class="list__item">
-							<div class="card-plan">
-								<span class="card-plan__logo">
+							<div class="card-provider">
+								<span class="card-provider__logo">
 									<img src="img/img.png" width="90" alt="image description" srcset="img/img@2x.png 2x">
 								</span>
-								<h3 class="card-plan__title">iTravelInsured SE</h3>
-								<div class="card-plan__description">
-									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-plan__link">see more</a></p>
+								<h3 class="card-provider__title">iTravelInsured SE</h3>
+								<div class="card-provider__description">
+									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-provider__link">...see more</a></p>
 								</div>
 								<div class="tag">
 									<a class="tag__btn" href="#">Single</a>
@@ -264,13 +264,13 @@
 							</div>
 						</li>
 						<li class="list__item">
-							<div class="card-plan">
-								<span class="card-plan__logo">
+							<div class="card-provider">
+								<span class="card-provider__logo">
 									<img src="img/generali.png" width="59" alt="image description" srcset="img/generali@2x.png 2x">
 								</span>
-								<h3 class="card-plan__title">Standard</h3>
-								<div class="card-plan__description">
-									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-plan__link">see more</a></p>
+								<h3 class="card-provider__title">Standard</h3>
+								<div class="card-provider__description">
+									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-provider__link">...see more</a></p>
 								</div>
 								<div class="tag">
 									<a class="tag__btn" href="#">Single</a>
@@ -283,13 +283,13 @@
 							</div>
 						</li>
 						<li class="list__item">
-							<div class="card-plan">
-								<span class="card-plan__logo">
+							<div class="card-provider">
+								<span class="card-provider__logo">
 									<img src="img/generali.png" width="59" alt="image description" srcset="img/generali@2x.png 2x">
 								</span>
-								<h3 class="card-plan__title">Preferred</h3>
-								<div class="card-plan__description">
-									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-plan__link">see more</a></p>
+								<h3 class="card-provider__title">Preferred</h3>
+								<div class="card-provider__description">
+									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-provider__link">...see more</a></p>
 								</div>
 								<div class="tag">
 									<a class="tag__btn" href="#">Single</a>
@@ -302,13 +302,13 @@
 							</div>
 						</li>
 						<li class="list__item">
-							<div class="card-plan">
-								<span class="card-plan__logo">
+							<div class="card-provider">
+								<span class="card-provider__logo">
 									<img src="img/travelex.jpg" width="106" alt="image description" srcset="img/travelex@2x.jpg 2x">
 								</span>
-								<h3 class="card-plan__title">Flight InsureTwo lines</h3>
-								<div class="card-plan__description">
-									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-plan__link">see more</a></p>
+								<h3 class="card-provider__title">Flight InsureTwo lines</h3>
+								<div class="card-provider__description">
+									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-provider__link">...see more</a></p>
 								</div>
 								<div class="tag">
 									<a class="tag__btn" href="#">Single</a>
@@ -321,13 +321,13 @@
 							</div>
 						</li>
 						<li class="list__item">
-							<div class="card-plan">
-								<span class="card-plan__logo">
+							<div class="card-provider">
+								<span class="card-provider__logo">
 									<img src="img/geoblue.png" width="86" alt="image description" srcset="img/geoblue@2x.png 2x">
 								</span>
-								<h3 class="card-plan__title">Trekker Essential</h3>
-								<div class="card-plan__description">
-									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-plan__link">see more</a></p>
+								<h3 class="card-provider__title">Trekker Essential</h3>
+								<div class="card-provider__description">
+									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-provider__link">...see more</a></p>
 								</div>
 								<div class="tag">
 									<a class="tag__btn" href="#">Single</a>
@@ -340,13 +340,13 @@
 							</div>
 						</li>
 						<li class="list__item">
-							<div class="card-plan">
-								<span class="card-plan__logo">
+							<div class="card-provider">
+								<span class="card-provider__logo">
 									<img src="img/medjet.png" width="104" alt="image description" srcset="img/medjet@2x.png 2x">
 								</span>
-								<h3 class="card-plan__title">MedjetAssist Annual</h3>
-								<div class="card-plan__description">
-									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-plan__link">see more</a></p>
+								<h3 class="card-provider__title">MedjetAssist Annual</h3>
+								<div class="card-provider__description">
+									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-provider__link">...see more</a></p>
 								</div>
 								<div class="tag">
 									<a class="tag__btn" href="#">Single</a>
@@ -359,13 +359,13 @@
 							</div>
 						</li>
 						<li class="list__item">
-							<div class="card-plan">
-								<span class="card-plan__logo">
+							<div class="card-provider">
+								<span class="card-provider__logo">
 									<img src="img/medjet.png" width="104" alt="image description" srcset="img/medjet@2x.png 2x">
 								</span>
-								<h3 class="card-plan__title">MedjetAssist Annual</h3>
-								<div class="card-plan__description">
-									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-plan__link">see more</a></p>
+								<h3 class="card-provider__title">MedjetAssist Annual</h3>
+								<div class="card-provider__description">
+									<p>Some plan text description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Should be no more than four lines, if it is, then we can do this <a href="#" class="card-provider__link">...see more</a></p>
 								</div>
 								<div class="tag">
 									<a class="tag__btn" href="#">Single</a>
@@ -457,6 +457,7 @@
 	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/jcf.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/jquery.main.js" defer=""></script>
 
