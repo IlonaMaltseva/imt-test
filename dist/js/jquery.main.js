@@ -63,17 +63,21 @@ function initTabs(){
 
 function initScrollTopButton() {
 	var button = $('.btn-scroll');
-	var footer = $('footer'); // Заміни 'footer' на правильний селектор, якщо потрібно
-
+	var footer = $('footer');
+	var footerOffset = footer.offset().top;
+	
 	$(window).on('scroll', function () {
-		var scrollTop = $(this).scrollTop();
-		var windowHeight = $(this).height();
-		var footerTop = footer.offset().top;
-
-		if (scrollTop > 600 && (scrollTop + windowHeight) < footerTop) {
+		if ($(this).scrollTop() > 600) {
 			button.addClass('show');
 		} else {
 			button.removeClass('show');
+		}
+	
+		var scrollPosition = $(this).scrollTop() + $(window).height();
+		if (scrollPosition > footerOffset + 40) {
+			button.addClass('on-footer');
+		} else {
+			button.removeClass('on-footer');
 		}
 	});
 

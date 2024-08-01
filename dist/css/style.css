@@ -1375,7 +1375,7 @@ fieldset {
 label,
 .label {
 	display: block;
-	font-size: var(--label-fz);
+	font-size: 16px;
 	margin-bottom: 8px;
 }
 
@@ -1631,6 +1631,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 .jcf-select-drop .jcf-select-drop-content {
 	background-color: #fff;
 	overflow: hidden;
+	border: 1px solid #777;
 	-webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.09);
 	        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.09);
 }
@@ -1650,7 +1651,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	position: relative;
 	font-size: 14px;
 	color: #212629;
-	padding: 24px 20px;
+	padding: 24px 0;
 	width: 100%;
 }
 .jcf-list .jcf-list-content {
@@ -1669,9 +1670,6 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	display: block;
 	padding-left: 0 !important;
 }
-.jcf-list ul li:not(:first-child) {
-	margin-top: 4px;
-}
 .jcf-list ul li::before {
 	display: none;
 }
@@ -1683,6 +1681,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	cursor: default;
 	display: block;
 	height: 1%;
+	padding: 2px 20px;
 }
 .jcf-list .jcf-disabled {
 	display: none;
@@ -1702,7 +1701,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 }
 
 .jcf-select-drop .jcf-hover {
-	background-color: #fff !important;
+	background-color: rgba(119, 119, 119, 0.05) !important;
 }
 
 body {
@@ -4537,9 +4536,6 @@ body.nav-active .nav-opener:before {
 	.text--start-md {
 		text-align: left !important;
 	}
-	.hero-tile__icon {
-		display: none;
-	}
 	.slider-services .swiper-slide {
 		width: 272px;
 	}
@@ -4719,6 +4715,7 @@ body.nav-active .nav-opener:before {
 		right: 20px;
 	}
 	.section-head {
+		gap: 40px;
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: row;
@@ -4761,6 +4758,10 @@ body.nav-active .nav-opener:before {
 	}
 }
 @media (min-width: 1024px){
+	label,
+	.label {
+		font-size: var(--label-fz);
+	}
 	input[type=text],
 	input[type=tel],
 	input[type=email],
