@@ -4,6 +4,7 @@ jQuery(function () {
 	isElementExist(".slider-services", initServices);
 	isElementExist(".slider-articles", initArticles);
 
+	initTabs();
 	initScrollTopButton();
 	initAccordion();
 	initShowMoreText();
@@ -29,6 +30,35 @@ function isElementExist(_el, _cb) {
 			console.log(e);
 		}
 	}
+}
+
+
+function initTabs(){
+	$('[data-tabs]').on('click', function(e) {
+		e.preventDefault();
+		$(this).closest('li').addClass('active').siblings('li.active').removeClass('active');
+		var activeTabsName = $(this).data('tabs');
+		$('[data-tabs-name="' + activeTabsName + '"]').each(function() {
+			$(this).addClass('active').siblings('.tab.active').removeClass('active');
+		});
+		window.location.hash = '#' + activeTabsName;
+		$(window).resize();
+	});
+	  if(window.location.hash && $('a[href="' + window.location.hash + '"]').length){
+		 $('a[href="' + window.location.hash + '"]').click();
+	 }
+	$('.tab-control li.active a').trigger('click');
+	$('.tab-control a').on('click', function(e) {
+		if ($(this).closest('li').hasClass('active') && $(window).innerWidth() < 1023) {
+			e.preventDefault();
+			$(this).closest('.tab-control').toggleClass('open');
+		}
+	});
+	$(document).on('click', function(e) {
+		if ($(e.target).closest('.tab-control.open li.active').length)
+			return;
+		$('.tab-control.open').removeClass('open');
+	});
 }
 
 function initScrollTopButton() {
