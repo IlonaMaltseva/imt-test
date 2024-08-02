@@ -74,7 +74,7 @@ function initScrollTopButton() {
 		}
 	
 		var scrollPosition = $(this).scrollTop() + $(window).height();
-		if (scrollPosition > footerOffset + 40) {
+		if (scrollPosition > footerOffset + 5) {
 			button.addClass('on-footer');
 		} else {
 			button.removeClass('on-footer');

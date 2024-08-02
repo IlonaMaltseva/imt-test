@@ -782,8 +782,6 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	background-color: #fff;
 	overflow: hidden;
 	border: 1px solid #777;
-	-webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.09);
-	        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.09);
 }
 
 /* multiple select styles */
@@ -2428,6 +2426,9 @@ body {
 	width: 100%;
 	margin-bottom: 24px;
 }
+.accordion:last-of-type {
+	margin-bottom: 0;
+}
 .accordion__item {
 	border-bottom: 1px solid #979797;
 }
@@ -3763,10 +3764,9 @@ body.nav-active .nav-opener:before {
 }
 .filter-form__btn {
 	display: block;
-	font-family: "Poppins", sans-serif;
-	text-align: right;
-	text-decoration: underline;
+	font-size: 11px;
 	padding-top: 13px;
+	text-transform: uppercase;
 }
 .filter-form__title {
 	font-family: "Poppins", sans-serif;
@@ -3848,7 +3848,6 @@ body.nav-active .nav-opener:before {
 
 body > .jcf-select-sort-drop .jcf-select-drop-content {
 	border: 1px solid #d6d6d6;
-	border-radius: 12px;
 }
 body > .jcf-select-sort-drop .jcf-list {
 	padding: 20px 0 20px;
@@ -4191,12 +4190,12 @@ body > .jcf-select-sort-drop .jcf-list .jcf-option::before {
 	position: relative;
 	padding-top: 12px;
 	margin-bottom: 42px;
-	overflow: hidden;
-	border-radius: 12px;
 }
 .visual-holder img {
 	display: block;
 	width: 100%;
+	overflow: hidden;
+	border-radius: 12px;
 }
 
 .btn-play {
@@ -4360,7 +4359,7 @@ body > .jcf-select-sort-drop .jcf-list .jcf-option::before {
 }
 .product-intro__img {
 	display: block;
-	margin: 0 auto 58px;
+	margin: 0 0 58px;
 }
 .product-intro__img img {
 	display: block;
@@ -4402,6 +4401,7 @@ body > .jcf-select-sort-drop .jcf-list .jcf-option::before {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
+	color: #212629;
 	-ms-flex-negative: 0;
 	    flex-shrink: 0;
 }
@@ -4412,6 +4412,9 @@ body > .jcf-select-sort-drop .jcf-list .jcf-option::before {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	font-family: "Poppins", sans-serif;
 	font-size: 18px;
 	gap: 10px;
@@ -4427,7 +4430,6 @@ body > .jcf-select-sort-drop .jcf-list .jcf-option::before {
 .review-block__title {
 	font-weight: normal;
 	padding-left: 40px;
-	margin: 0;
 }
 .review-block__wrap {
 	display: -webkit-box;
@@ -4887,6 +4889,12 @@ body > .jcf-select-sort-drop .jcf-list .jcf-option::before {
 	}
 }
 
+@media (max-width: 1023px) and (min-width: 480px){
+	.product-intro__aside {
+		max-width: 283px;
+	}
+}
+
 @media (max-width: 1023px){
 	.visible--md {
 		display: none !important;
@@ -4959,6 +4967,9 @@ body > .jcf-select-sort-drop .jcf-list .jcf-option::before {
 	.section-cta__title {
 		font-size: 26px;
 	}
+	.product-intro__img img {
+		margin: 0 auto;
+	}
 	.review-block__title {
 		font-size: 20px;
 	}
@@ -4980,6 +4991,7 @@ body > .jcf-select-sort-drop .jcf-list .jcf-option::before {
 		position: relative;
 		pointer-events: auto;
 		overflow: hidden;
+		min-height: 66px;
 		background-color: #fff;
 		-webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.09);
 		        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.09);
@@ -4994,7 +5006,6 @@ body > .jcf-select-sort-drop .jcf-list .jcf-option::before {
 	}
 	.active .tab-control__link {
 		font-size: 16px;
-		color: #777;
 		padding: 20px 17px;
 	}
 	.tab-control__link::after {
@@ -5023,6 +5034,7 @@ body > .jcf-select-sort-drop .jcf-list .jcf-option::before {
 	}
 	.card-product {
 		font-size: 14px;
+		line-height: 1.4;
 	}
 }
 
@@ -5099,6 +5111,9 @@ body > .jcf-select-sort-drop .jcf-list .jcf-option::before {
 	.btn-toggle {
 		display: none;
 	}
+	.review-block {
+		max-width: 283px;
+	}
 }
 
 @media (min-width: 568px){
@@ -5139,6 +5154,9 @@ body > .jcf-select-sort-drop .jcf-list .jcf-option::before {
 		    -ms-flex-align: center;
 		        align-items: center;
 		margin-bottom: 34px;
+	}
+	.section-head__title {
+		width: 50%;
 	}
 	.link-row {
 		-webkit-box-orient: horizontal;
@@ -5529,7 +5547,11 @@ body > .jcf-select-sort-drop .jcf-list .jcf-option::before {
 		font-weight: 800;
 	}
 	.filter-form__btn {
+		font-family: "Poppins", sans-serif;
 		font-size: 18px;
+		text-align: right;
+		text-decoration: underline;
+		text-transform: none;
 	}
 	.filter-form__title {
 		display: none;
@@ -5617,9 +5639,6 @@ body > .jcf-select-sort-drop .jcf-list .jcf-option::before {
 		-webkit-box-pack: start;
 		    -ms-flex-pack: start;
 		        justify-content: flex-start;
-	}
-	.review-block {
-		max-width: 283px;
 	}
 	.content-wrap {
 		-webkit-box-orient: horizontal;

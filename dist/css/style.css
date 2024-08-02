@@ -1632,8 +1632,6 @@ body > .jcf-select-drop.jcf-drop-flipped {
 	background-color: #fff;
 	overflow: hidden;
 	border: 1px solid #777;
-	-webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.09);
-	        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.09);
 }
 
 /* multiple select styles */
@@ -3278,6 +3276,9 @@ body {
 	width: 100%;
 	margin-bottom: 24px;
 }
+.accordion:last-of-type {
+	margin-bottom: 0;
+}
 .accordion__item {
 	border-bottom: 1px solid #979797;
 }
@@ -4724,6 +4725,9 @@ body.nav-active .nav-opener:before {
 		    -ms-flex-align: center;
 		        align-items: center;
 		margin-bottom: 34px;
+	}
+	.section-head__title {
+		width: 50%;
 	}
 	.link-row {
 		-webkit-box-orient: horizontal;
