@@ -65,7 +65,7 @@
 									</ul>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link menu__link--search">
+									<a href="#" data-fancybox="" data-src="#search-modal" class="menu__link menu__link--search">
 										<span class="hidden--lg">Search</span>
 										<img src="img/icon-search.svg" width="20" alt="image description" class="icon visible--lg">
 									</a>
@@ -622,6 +622,19 @@
 				</div>
 			</div>
 		</footer>
+		<div style="display: none;" id="search-modal" class="modal-lg" tabindex="1">
+			<div class="search-holder">
+				<h2 class="search-holder__title">Search InsureMyTrip</h2>
+				<form action="#" class="search-form">
+					<div class="search-form__field icon--search">
+						<input type="text" placeholder="Search">
+					</div>
+					<div class="search-form__btn">
+						<button class="btn btn--primary">Search</button>
+					</div>
+				</form>
+			</div>
+		</div>
 	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
